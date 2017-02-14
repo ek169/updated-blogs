@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+<form method="post">
+    <label>
+        Username:
+    <input type="text" name="username" value="{{username}}"/><span>{{error}}</span>
+    </label>
+    <br>
+    <label>
+        Password:
+        <input type="password" name="password"/>
+    </label>
+    <br>
+    <input type="submit"/>
+
+</form>
+<div>
+    <span>If you don't have a username <a href="/signup">create one</a></span>
+</div>
+{% endblock %}
